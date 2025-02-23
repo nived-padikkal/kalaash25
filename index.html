@@ -15,7 +15,7 @@
             padding: 20px;
             margin: 0;
         }
-        
+
         /* Navbar */
         .navbar {
             display: flex;
@@ -133,6 +133,15 @@
             font-size: 14px;
             border-top: 2px solid #00ffcc;
         }
+        
+        #flag {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #00ffcc;
+            font-weight: bold;
+            text-align: center;
+            display: none; /* Initially hidden */
+        }
     </style>
 </head>
 <body>
@@ -203,9 +212,18 @@
         </div>
     </div>
 
+    <!-- Hidden Flag -->
+    <div id="flag"></div>
+
     <div class="footer">
         © 2025 Created by Nived
     </div>
+
+    <script>
+        const encodedFlag = "S2FsYWFzaDI1e0hpZGRlbl9GbGFnX0NhcHR1cmVkfQ";
+        document.getElementById("flag").textContent = atob(encodedFlag);
+        console.log("Want to find the flag?");
+    </script>
 
 </body>
 </html>
