@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kalaash CTF Challenge</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+    body {
+
+        background-color: #0a0a0a;
+
+        color: #00ffcc;
+
+        font-family: 'Share Tech Mono', monospace;
+
+        text-align: center;
+
+        padding: 20px;
+
+        margin: 0;
+
+    }
+
+    
+
+    /* Navbar */
+
+    .navbar {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        background-color: #000;
+
+        padding: 10px 20px;
+
+        border-bottom: 3px solid #00ffcc;
+
+    }
+
+    .navbar img {
+
+        height: 50px;
+
+    }
+
+
+
+    .content-img {
+
+        width: 300px;
+
+        height: auto;
+
+        margin-top: 20px;
+
+        border-radius: 8px;
+
+        border: 2px solid #00ffcc;
+
+    }
+
+
+
+    .register-btn {
+
+        background-color: #ffcc00;
+
+        color: #000;
+
+        padding: 10px 20px;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        text-decoration: none;
+
+        display: inline-block;
+
+        margin-top: 15px;
+
+        border-radius: 5px;
+
+    }
+
+    .register-btn:hover {
+
+        background-color: #ffaa00;
+
+    }
+
+
+
+    .date {
+
+        margin-top: 10px;
+
+        font-size: 14px;
+
+        color: #ffffff;
+
+    }
+
+
+
+    h1 {
+
+        text-transform: uppercase;
+
+        border-bottom: 2px solid #00ffcc;
+
+        padding-bottom: 10px;
+
+        display: inline-block;
+
+        margin-top: 20px;
+
+    }
+
+
+
+    .levels-container {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+
+        margin-top: 20px;
+
+    }
+
+
+
+    .level-card {
+
+        background-color: #111;
+
+        padding: 15px;
+
+        border: 2px solid #00ffcc;
+
+        width: 300px;
+
+        text-align: left;
+
+        border-radius: 8px;
+
+        transition: 0.3s;
+
+    }
+
+    .level-card:hover {
+
+        background-color: #222;
+
+    }
+
+
+
+    .icon {
+
+        font-size: 40px;
+
+        color: #00ffcc;
+
+        display: block;
+
+        text-align: center;
+
+    }
+
+
+
+    .level-title {
+
+        font-size: 20px;
+
+        font-weight: bold;
+
+    }
+
+
+
+    .level-desc {
+
+        font-size: 14px;
+
+        margin-top: 8px;
+
+    }
+
+
+
+    .difficulty {
+
+        color: #ffcc00;
+
+        font-size: 14px;
+
+    }
+
+
+
+    .join-btn {
+
+        background-color: #00ffcc;
+
+        color: #000;
+
+        padding: 10px;
+
+        text-align: center;
+
+        display: block;
+
+        text-decoration: none;
+
+        font-weight: bold;
+
+        margin-top: 10px;
+
+        border-radius: 5px;
+
+    }
+
+    .join-btn:hover {
+
+        background-color: #008877;
+
+        color: white;
+
+    }
+
+
+
+    .footer {
+
+        margin-top: 30px;
+
+        padding: 10px;
+
+        background-color: #111;
+
+        color: #ffcc00;
+
+        font-size: 14px;
+
+        border-top: 2px solid #00ffcc;
+
+    }
+
+</style>
+
+</head><body><!-- Navbar -->
+
+<div class="navbar">
+
+    <img src="https://res.cloudinary.com/nivu/image/upload/v1740061775/klog_rvdf3z.png" alt="Kalaash Logo"> <!-- Replace with actual Kalaash logo -->
+
+    <img src="https://simat.ac.in/wp-content/uploads/2020/02/logo-simat.png" alt="College Logo"> <!-- Replace with actual College logo -->
+
+</div>
+
+
+
+<img src="https://camo.githubusercontent.com/50f0c28435035fddfe25e69e10fd8d5e1b7f63e7f3369514b74f5708fc5ff89b/68747470733a2f2f6374662d62722e6f72672f77702d636f6e74656e742f75706c6f6164732f323031342f31322f69636f6e5f32353678323536312e706e67" 
+
+     alt="CTF Image" class="content-img">
+
+
+
+<br>
+
+<a href="registration-form.html" class="register-btn">Register</a>
+
+
+
+<div class="date">Event Date: 25th February 2025</div>
+
+
+
+<h1>CTF Challenge Levels</h1>
+
+
+
+<div class="levels-container">
+
+    <div class="level-card">
+
+        <i class="fa-solid fa-terminal icon"></i>
+
+        <div class="level-title">Level 1: Basic Recon</div>
+
+        <div class="level-desc">Learn basic reconnaissance techniques.</div>
+
+        <div class="difficulty">Difficulty: Easy</div>
+
+        <a href="#" class="join-btn">Join</a>
+
+    </div>
+
+
+
+    <div class="level-card">
+
+        <i class="fa-solid fa-bug icon"></i>
+
+        <div class="level-title">Level 2: Web Exploitation</div>
+
+        <div class="level-desc">Find vulnerabilities in web applications.</div>
+
+        <div class="difficulty">Difficulty: Medium</div>
+
+        <a href="#" class="join-btn">Join</a>
+
+    </div>
+
+
+
+    <div class="level-card">
+
+        <i class="fa-solid fa-lock icon"></i>
+
+        <div class="level-title">Level 3: Cryptography</div>
+
+        <div class="level-desc">Decrypt hidden messages.</div>
+
+        <div class="difficulty">Difficulty: Medium</div>
+
+        <a href="#" class="join-btn">Join</a>
+
+    </div>
+
+
+
+    <div class="level-card">
+
+        <i class="fa-solid fa-network-wired icon"></i>
+
+        <div class="level-title">Level 4: Network Forensics</div>
+
+        <div class="level-desc">Analyze network traffic for clues.</div>
+
+        <div class="difficulty">Difficulty: Hard</div>
+
+        <a href="#" class="join-btn">Join</a>
+
+    </div>
+
+
+
+    <div class="level-card">
+
+        <i class="fa-solid fa-code icon"></i>
+
+        <div class="level-title">Level 5: Reverse Engineering</div>
+
+        <div class="level-desc">Understand and manipulate binaries.</div>
+
+        <div class="difficulty">Difficulty: Hard</div>
+
+        <a href="#" class="join-btn">Join</a>
+
+    </div>
+
+
+
+    <div class="level-card">
+
+        <i class="fa-solid fa-user-secret icon"></i>
+
+        <div class="level-title">Level 6: Steganography</div>
+
+        <div class="level-desc">Find hidden data in images and files.</div>
+
+        <div class="difficulty">Difficulty: Medium</div>
+
+        <a href="#" class="join-btn">Join</a>
+
+    </div>
+
+</div>
+
+
+
+<div class="footer">
+
+    © 2025 Created by Nived
+
+</div>
+
+</body></html>
