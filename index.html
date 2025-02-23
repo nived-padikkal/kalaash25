@@ -15,8 +15,6 @@
             padding: 20px;
             margin: 0;
         }
-
-        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -28,7 +26,6 @@
         .navbar img {
             height: 50px;
         }
-
         .content-img {
             width: 300px;
             height: auto;
@@ -36,7 +33,6 @@
             border-radius: 8px;
             border: 2px solid #00ffcc;
         }
-
         .register-btn {
             background-color: #ffcc00;
             color: #000;
@@ -51,13 +47,11 @@
         .register-btn:hover {
             background-color: #ffaa00;
         }
-
         .date {
             margin-top: 10px;
             font-size: 14px;
             color: #ffffff;
         }
-
         h1 {
             text-transform: uppercase;
             border-bottom: 2px solid #00ffcc;
@@ -65,7 +59,6 @@
             display: inline-block;
             margin-top: 20px;
         }
-
         .levels-container {
             display: flex;
             flex-wrap: wrap;
@@ -73,7 +66,6 @@
             gap: 15px;
             margin-top: 20px;
         }
-
         .level-card {
             background-color: #111;
             padding: 15px;
@@ -86,29 +78,24 @@
         .level-card:hover {
             background-color: #222;
         }
-
         .icon {
             font-size: 40px;
             color: #00ffcc;
             display: block;
             text-align: center;
         }
-
         .level-title {
             font-size: 20px;
             font-weight: bold;
         }
-
         .level-desc {
             font-size: 14px;
             margin-top: 8px;
         }
-
         .difficulty {
             color: #ffcc00;
             font-size: 14px;
         }
-
         .join-btn {
             background-color: #00ffcc;
             color: #000;
@@ -124,7 +111,6 @@
             background-color: #008877;
             color: white;
         }
-
         .footer {
             margin-top: 30px;
             padding: 10px;
@@ -133,20 +119,18 @@
             font-size: 14px;
             border-top: 2px solid #00ffcc;
         }
-        
         #flag {
             margin-top: 20px;
             font-size: 16px;
             color: #00ffcc;
             font-weight: bold;
             text-align: center;
-            display: none; /* Initially hidden */
+            display: none;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
     <div class="navbar">
         <img src="https://res.cloudinary.com/nivu/image/upload/v1740061775/klog_rvdf3z.png" alt="Kalaash Logo">
         <img src="https://simat.ac.in/wp-content/uploads/2020/02/logo-simat.png" alt="College Logo">
@@ -204,7 +188,6 @@
         </div>
     </div>
 
-    <!-- Hidden Flag -->
     <div id="flag"></div>
 
     <div class="footer">
@@ -212,7 +195,6 @@
     </div>
 
     <script>
-        // Fetch data from JSON URL but don't display it
         fetch('https://mocki.io/v1/2edd1fae-4028-4cd4-aea2-80aa02eb8d9f')
             .then(response => response.json())
             .then(data => {
@@ -220,7 +202,6 @@
             })
             .catch(error => console.error("Error fetching JSON:", error));
 
-        // Hidden flag functionality
         const encodedFlag = "S2FsYWFzaDI1e0hpZGRlbl9GbGFnX0NhcHR1cmVkfQ";
         document.getElementById("flag").textContent = atob(encodedFlag);
         console.log("Want to find the flag?");
