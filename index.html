@@ -202,14 +202,6 @@
             <div class="difficulty">Difficulty: Medium</div>
             <a href="#" class="join-btn">Join</a>
         </div>
-
-        <div class="level-card">
-            <i class="fa-solid fa-network-wired icon"></i>
-            <div class="level-title">Level 6: Network Forensics</div>
-            <div class="level-desc">Analyze network traffic for clues.</div>
-            <div class="difficulty">Difficulty: Hard</div>
-            <a href="#" class="join-btn">Join</a>
-        </div>
     </div>
 
     <!-- Hidden Flag -->
@@ -220,6 +212,15 @@
     </div>
 
     <script>
+        // Fetch data from JSON URL but don't display it
+        fetch('https://mocki.io/v1/2edd1fae-4028-4cd4-aea2-80aa02eb8d9f')
+            .then(response => response.json())
+            .then(data => {
+                console.log("Fetched JSON data:");
+            })
+            .catch(error => console.error("Error fetching JSON:", error));
+
+        // Hidden flag functionality
         const encodedFlag = "S2FsYWFzaDI1e0hpZGRlbl9GbGFnX0NhcHR1cmVkfQ";
         document.getElementById("flag").textContent = atob(encodedFlag);
         console.log("Want to find the flag?");
